@@ -1,0 +1,67 @@
+<div class="wrapper">
+    <sa-Sidemenu></sa-Sidemenu>
+    <div class="main-panel">
+	<sa-Header></sa-Header>
+	
+      <div class="content">
+          <div class="container-fluid">
+            <gm-Search-Bar></gm-Search-Bar>
+            
+            <div ng-if="footballers" id="Logs" class="row">
+                  <div class="col-md-12">
+                      <div class="card">
+                          <div class="header text-center">
+                              <h4 class="title">Player List</h4>
+                          </div>
+                          <div class="content table-responsive table-full-width">
+                              <table class="table table-hover table-striped">
+                                  <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Club</th>
+                                            <th>Nationality</th>
+                                            <th>Contract Expiry</th>
+                                            <th>Age</th>
+                                            <th>Rating</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                  <tbody>
+                                      <tr ng-repeat="footballer in footballers | filter : searchTerm ">
+                                        <td>
+                                            <a ui-sref="PlayerInfo({playerId:footballer._id})">
+                                            {{footballer.Name}}
+                                            </a>
+                                        </td>
+                                        <td>{{footballer.Club}}</td>
+                                        <td>{{footballer.Nationality}}</td>
+                                        <td>{{footballer.Contract_Expiry}}</td>
+                                        <td>{{footballer.Age}}</td>
+                                        <td>{{footballer.Rating}}</td>
+                                        <td>
+                                            <a ui-sref="PlayerInfo({playerId:footballer._id})" class="pe-7s-more"></a>
+                                        </td>
+                                        <td>
+                                            <i class="pe-7s-plus btn btn-fill btn-success"></i>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <gm-Pagination offset="0" totalentries="500" limit="50"></gm-Pagination>
+                      </div>
+                  </div>
+              </div>
+              <div ng-if="! footballers.length" class="row">
+                <div class="col-md-12">
+                    <div class="card" style="padding: 20px;">
+                        No Logs yet
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+  </div>

@@ -1,0 +1,11 @@
+<nav aria-label="Page navigation example" class="text-center">
+        <ul class="pagination justify-content-center">
+            <li ng-if="pageNo!=1" class="page-item">
+            <a class="page-link" ui-sref="Dashboard({page:pageNo-1})">Previous</a>
+            </li>
+            <li ng-class="$index==(pageNo-1) ?'active':''" ng-repeat="i in pages track by $index"><a ui-sref="Dashboard({page:$index+1})" class="page-link">{{$index+1}}</a></li>
+            <li ng-if="pageNo!=pages.length" class="page-item">
+                <a class="page-link" ui-sref="Dashboard({page: pageNo+1})">Next</a>
+            </li>
+        </ul>
+</nav>

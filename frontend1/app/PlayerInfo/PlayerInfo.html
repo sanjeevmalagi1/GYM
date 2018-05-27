@@ -1,0 +1,232 @@
+<div class="wrapper">
+    <sa-Sidemenu></sa-Sidemenu>
+    <div class="main-panel">
+	<sa-Header></sa-Header>
+	
+      <div class="content">
+          <div class="container-fluid">
+            
+            <div id="Logs" class="row">
+                <div class="col-sm-5">
+                    <div class="card">
+                            <div class="header text-center">
+                                <img ng-src="{{image}}" class="img-thumbnail" />
+                                <h2 class="title">{{player.Name}}</h2>
+                            </div>
+                            <table class="table table-hover table-striped">
+                                <tr>
+                                    <td>  Name  </td>
+                                    <td> {{ player.Name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Age  </td>
+                                    <td> {{ player.Age }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Height  </td>
+                                    <td> {{ player.Height }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Weight  </td>
+                                    <td> {{ player.Weight }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Contract Expiry  </td>
+                                    <td> {{ player.Contract_Expiry }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Nationality  </td>
+                                    <td> {{ player.Nationality }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  National Position  </td>
+                                    <td> {{ player.National_Position }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Club  </td>
+                                    <td> {{ player.Club }}</td>
+                                </tr>
+                                <tr>
+                                    <td>  Club Position  </td>
+                                    <td> {{ player.Club_Position }}</td>
+                                </tr>
+                                <tr>
+                                    <td> Preffered Foot  </td>
+                                    <td> {{ player.Preffered_Foot }}</td>
+                                </tr>
+                                <tr>
+                                    <td> Preffered Position  </td>
+                                    <td> {{ player.Preffered_Position }}</td>
+                                </tr>
+                                <tr>
+                                    <td> Work Rate  </td>
+                                    <td> {{ player.Work_Rate }}</td>
+                                </tr>
+                                
+                            </table>
+                    </div>
+                </div>
+                  <div class="col-md-7">
+                      <div class="card">
+                            <div class="header text-center">
+                                <h2 class="title">Stats / Numbers</h2>
+                            </div>
+                          <div class="content table-responsive table-full-width">
+                              <table class="table table-hover table-striped">
+                                  <tbody>
+                                        <tr>
+                                            <td> Weak foot  </td>
+                                            <td> {{ player.Weak_foot }}</td>
+                                        </tr>
+                                         <tr>
+                                            <td> Skill Moves  </td>
+                                            <td> {{ player.Skill_Moves }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Ball Control  </td>
+                                            <td> {{ player.Ball_Control }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Dribbling </td>
+                                            <td> {{ player.Dribbling }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Marking  </td>
+                                            <td> {{ player.Marking }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Sliding Tackle  </td>
+                                            <td> {{ player.Sliding_Tackle }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Standing Tackle  </td>
+                                            <td> {{ player.Standing_Tackle }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Aggression  </td>
+                                            <td> {{ player.Aggression }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Reactions  </td>
+                                            <td> {{ player.Reactions }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Attacking Position </td>
+                                            <td> {{ player.Attacking_Position }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Interceptions  </td>
+                                            <td> {{ player.Interceptions }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Vision  </td>
+                                            <td> {{ player.Vision }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Composure  </td>
+                                            <td> {{ player.Composure }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Crossing  </td>
+                                            <td> {{ player.Crossing }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Short Pass  </td>
+                                            <td> {{ player.Short_Pass }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Long Pass  </td>
+                                            <td> {{ player.Long_Pass }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Acceleration  </td>
+                                            <td> {{ player.Acceleration }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Speed  </td>
+                                            <td> {{ player.Speed }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Stamina  </td>
+                                            <td> {{ player.Stamina }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Strength  </td>
+                                            <td> {{ player.Strength }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Balance  </td>
+                                            <td> {{ player.Balance }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Agility  </td>
+                                            <td> {{ player.Agility }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Jumping  </td>
+                                            <td> {{ player.Jumping }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Heading  </td>
+                                            <td> {{ player.Heading }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Shot Power  </td>
+                                            <td> {{ player.Shot_Power }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Finishing  </td>
+                                            <td> {{ player.Finishing }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Long Shots  </td>
+                                            <td> {{ player.Long_Shots }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Curve  </td>
+                                            <td> {{ player.Curve }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Freekick Accuracy  </td>
+                                            <td> {{ player.Freekick_Accuracy }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Penalties  </td>
+                                            <td> {{ player.Penalties }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Volleys  </td>
+                                            <td> {{ player.Volleys }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> GK Positioning  </td>
+                                            <td> {{ player.GK_Positioning }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> GK Diving  </td>
+                                            <td> {{ player.GK_Diving }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> GK Kicking  </td>
+                                            <td> {{ player.GK_Kicking }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> GK Handling  </td>
+                                            <td> {{ player.GK_Handling }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td> GK Reflexes  </td>
+                                            <td> {{ player.GK_Reflexes }}</td>
+                                        </tr>  
+                                    </tbody>
+                              </table>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+  </div>

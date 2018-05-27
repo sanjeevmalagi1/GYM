@@ -1,0 +1,21 @@
+<div id="websiteSelector" class="card">
+    <div class="content text-center">
+      <div class="row">
+
+            <div class="col-sm-10">
+                <div class="form-group">
+                  <input ng-model="searchTerm" class="form-control" placeholder="Search Player"/>
+                </div>
+            </div>
+            <div class="col-sm-2">
+              
+                  <div>
+                    <button ui-sref="EditWebsite" class="form-control btn btn-primary"><i class="pe-7s-search"></i> Search</button>
+                  </div>
+              
+            </div>
+
+        </div>
+    </div>
+</div>
+<button ng-click="goToWebsiteSelector()" class="btn btn-fill btn-danger pe-7s-angle-up-circle" style="position:fixed;z-index:100;bottom:10px; right:20px;"></button>
